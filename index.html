@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    const ua = navigator.userAgent || navigator.vendor || "";
+
+    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+      // iOS App Store
+      window.location.href = "https://apps.apple.com/cy/app/arthur-occupant/id1333440153";
+    } else if (/Android/.test(ua)) {
+      // Google Play Store
+      window.location.href = "https://play.google.com/store/apps/details?id=com.arthur.tenant";
+    } else {
+      // Desktop fallback
+      window.location.href = "https://www.arthuronline.co.uk/";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to the right app store...</p>
+</body>
+</html>
